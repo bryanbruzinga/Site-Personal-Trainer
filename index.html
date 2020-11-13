@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="js/script.js" defer></script>
+    <script src="js/navbar.js" defer></script>
+    <script src="js/img-changer.js" defer onload='imgChanger()'></script>
     <title>Karla Personal Trainer</title>
 </head>
 <body>
-    <header class='main-home'>        
+    <header class='main-home'>
+        <img src="./css/images/home.png" id='img-home' alt="Karla personal trainer home page">       
         <div class="container">            
         <nav id="navbar">  
             <ul>
@@ -165,6 +167,8 @@
     </section>
 
     <section>
+        <div class="container-extras">
+        
         <div class="horario">
             <h3>Karla Personal Trainer</h3>
             <h2>Horário de Atendimento</h2>
@@ -175,66 +179,80 @@
             <h3>Karla Personal Trainer</h3>
             <h2>Nosso Jornalzinho</h2>
             <form id="formulario" action="#" method="get">
-                <label for="nome">Nome</label>
+                <label for="nome"></label>
                 <input type="text" name="nome" id="nome" placeholder="Seu Nome"/><br />
 
-                <label for="email">Seu E-mail</label>
+                <label for="email"></label>
                 <input type="email" name="email" id="email" placeholder="Seu E-mail"/>
+                <p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum possimus ipsam eum tempora consequatur in nemo fuga animi laborum, vel nam error accusantium distinctio rerum minima magnam laudantium consequuntur dolor.
+                </p>
                 
-                <button type="submit" name="enviar">Increver-se</button>
+                <button type="submit" id='botao-inscrever' name="enviar">Increver-se</button>
             </form>
         </div>
+    </div>
     </section>
 
     <footer>
         <div class="footer-container">
-            <div class="coluna-footer">
-                <a href="index.html" class="title-karla">Karla Personal Trainer</a>
+            <div class="coluna-footer coluna-personal">
+                <a href="index.html" class="footer-karla">Karla Personal Trainer</a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis sapiente odit aut sunt alias accusamus! Corporis recusandae consectetur, animi sint quaerat hic modi! Incidunt error voluptatem laboriosam! Modi, fuga!</p>
                 <p>
-                    <i class='fa'>&#xf16d;</i>
+                    <i class='fa'>
+                        <a href="#">&#xf16d;</a>
+                    </i>
                 </p>
 
             </div>
             <div class="coluna-footer">
+                <h3>Depoimentos</h3>
+                <p class="depoimento">"Corporis recusandae consectetur, animi sint quaerat hic modi!"</p>
+                <p class='nome-depoimento'>Smith WeberJegermanjanson <br /></p>
+                <p class="depoimento">"Incidunt error voluptatem laboriosam! Modi, fuga!"</p>
+                <p class='nome-depoimento'>João do Sabão Sagrado</p>
+
+            </div>
+            <div class="coluna-footer coluna-aulas">
                 <h3>Aulas</h3>
-                <ul>
-                    <li>
+                    <p class='aulas'>
                         <a href="#">Musculação</a>
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         <a href="#">Fitness</a>
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         <a href="#">Yoga</a>
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         <a href="#">Levantamento de Peso</a>
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         <a href="#">Reabilitação</a>
-                    </li>
-                    <li>
+                    </p>
+                    <p>
                         <a href="#">Zumba</a>
-                    </li>
-                </ul>
+                    </p>
                 
             </div>
-            <div class="coluna-footer">
+            <div class="coluna-footer coluna-contato">
                 <h3>Contato</h3>
 
-                <p>Endereço: <br />
+                <p>
+                    <span class='nome-depoimento'>Endereço</span> <br />
                 Rua dos perdidos, lado oeste da saída pra entrada, ??, 559</p>
 
-                <p>Telefone: <br />
+                <p>
+                    <span class='nome-depoimento'>Telefone</span> <br />
                   (99) 9 9999-9999 <p>
                 
-                <p>Email: <br />
+                <p>
+                    <span class='nome-depoimento'>Email</span> <br />
                 umemail@gmail.com</p>
                 
             </div>
         </div>
-        Desenvolvido por Bryan da Silva Bruzinga
+        <span class="copyright"><p>Desenvolvido por <a href="http://www.github.com/bryanbruzinga" target="_blank">Bryan da Silva Bruzinga</a></p></span>
     </footer>
     
 </body>
