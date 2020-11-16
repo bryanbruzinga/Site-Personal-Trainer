@@ -1,0 +1,28 @@
+.precos {
+    margin-top: 100px;
+}
+.container-precos {
+    background-image: url(images/price-paralax.png);
+    background-attachment: fixed;
+    background-size: fill;
+    padding: 100px 0px 0px 130px;
+    height: 650px; 
+}
+.column-precos {
+    width: 28%;
+    display: inline-block;
+    margin-right: 25px;
+    background-color: white;
+    height: 580px;
+}
+.img-preco{
+    width: 100%;
+    margin-bottom: 35px;
+}.valor {
+    font-size: 30px;
+    color: #38B143;
+    font-weight: bold;
+}
+.desc-preco {
+    margin-left: 35px;
+}

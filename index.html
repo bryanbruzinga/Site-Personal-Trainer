@@ -5,19 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/porque.css">
+    <link rel="stylesheet" href="css/expert.css">
+    <link rel="stylesheet" href="css/servicos.css">
+    <link rel="stylesheet" href="css/precos.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/81ec1aaa96.js" crossorigin="anonymous" defer></script>
     <script src="js/navbar.js" defer></script>
+    <script src="js/menu.js" defer></script>
     <script src="js/img-changer.js" defer onload='imgChanger()'></script>
+    <script src="js/go-top.js" defer></script>
     <title>Karla Personal Trainer</title>
 </head>
 <body>
     <header class='main-home'>
-        <img src="./css/images/home.png" id='img-home' alt="Karla personal trainer home page">       
-        <div class="container">            
-        <nav id="navbar">  
+        <img src="./css/images/home1.png" id='img-home' alt="Karla personal trainer home page">       
+        <div class="container">        
+        <nav id="navbar">
+                <a href="javascript:void(0);" class="icon" onclick="menuHamburger()">
+                    <i class="fa fa-bars"></i>
+                </a>
             <ul>
                 <li>
-                    <a href="index.html" class="title-karla">Karla Personal Trainer</a>
+                    <a href="index.html" class="title-karla active">Karla Personal Trainer</a>
                 </li>
                 <li>
                     <a href="index.html">Página Principal</a>
@@ -34,13 +47,14 @@
             </ul>          
         </nav>
         <section class="section-home">
-            <h1>Karla Personal Trainer</h1>
+            <h1 id='demo-title'>Karla Personal Trainer</h1>
 
             <p class='demo-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque debitis et sint quisquam sunt, ducimus facere temporibus beatae deserunt est, nobis adipisci quis exercitationem aperiam reiciendis reprehenderit officiis fuga atque.</p>
 
             <p class='p-membro'>
                 <a class='seja-membro' href="#">Seja um aluno</a>
             </p>
+            <a href="#top" class="fas fa-arrow-up" id="seta-topo"></a>
 
         </section>
     </div>
@@ -82,7 +96,7 @@
         <div class="linha1-servicos">
 
             <div class="small-content">
-            <h3>Treinamento de Força</h3>
+            <h3><i class="fa fa-dumbbell"></i>Treinamento de Força</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
@@ -92,7 +106,7 @@
             </div>
 
             <div class="small-content">
-            <h3>Melhoria de rendimento</h3>
+            <h3><i class="fa fa-running"></i>Melhoria de rendimento</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
@@ -200,7 +214,13 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis sapiente odit aut sunt alias accusamus! Corporis recusandae consectetur, animi sint quaerat hic modi! Incidunt error voluptatem laboriosam! Modi, fuga!</p>
                 <p>
                     <i class='fa'>
-                        <a href="#">&#xf16d;</a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </i>
+                    <i class='fa'>
+                        <a href="#" class="fab fa-facebook"></a>
+                    </i>
+                    <i class='fa'>
+                        <a href="#" class="fab fa-twitter"></a>
                     </i>
                 </p>
 

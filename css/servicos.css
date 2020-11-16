@@ -1,0 +1,22 @@
+.linha1-servicos, .linha2-servicos {
+    margin-top: 70px;
+    margin-left: 180px;
+}
+.small-content {
+    width: 30%;
+    display: inline-block;
+    margin: 0px 20px 20px 0px;    
+}
+.small-content > h3 {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.small-content > p{
+    line-height: 30px;
+    color: #8393aa;
+}
+.servicos {
+    width: 90%;
+}

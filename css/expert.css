@@ -1,0 +1,14 @@
+section.expert{
+    margin-top: 70px;
+    background-image: url(images/gym-expert.png);
+    background-size: cover;
+    height: 900px;
+}
+.ask-expert{
+    padding: 150px 0px 0px 150px;
+    width: 30%;
+    color: white;
+}
+.text-expert{
+    margin-top: 50px;
+}

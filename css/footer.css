@@ -1,0 +1,51 @@
+footer {
+    background-image: url(images/footer.jpg);
+    background-size: cover;
+    margin-top: 100px;
+    height: 100%;
+}
+.footer-container {
+    padding: 180px 80px;
+}
+.coluna-footer {
+    width: 21%;
+    display: inline-block;
+    margin-right: 50px;
+    line-height: 30px;
+}
+.coluna-footer > h3{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.footer-karla ~ p{
+    color: #ccc;
+    margin-top: 30px;    
+}
+.fab {
+    margin-right: 60px;
+}
+.depoimento{
+    margin-top: 20px;
+    color: #ccc;
+    font-style: italic;
+}
+.nome-depoimento{
+    color: #38B143;
+    font-weight: bold
+}
+.coluna-aulas > a, 
+.coluna-contato{
+    color: #ccc;
+}
+.coluna-aulas >h3{
+    margin-bottom: 40px;
+}
+.copyright {
+    color: #ccc;
+    text-align: center;
+    font-size: 14px;
+}
+.copyright > p{
+    padding-bottom: 40px;
+}
