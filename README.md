@@ -4,4 +4,4 @@
  Site somente com a parte Front End por hora, algumas funcionalidades aplicadas, porém, mantendo a simplicidade.
  O endereço para vê-lo online está [aqui.](https://bryanbruzinga.github.io/Site-Personal-Trainer/.)
  
- Ainda em construção, mobile ainda não aplicado.
+ Css reestruturado aplicando conceitos de Flex Boxes.
