@@ -1,14 +1,38 @@
-section.expert{
-    margin-top: 70px;
+.expert {
+    margin-top: 8%;
+    padding-top: 6%;
+    padding-left: 100px;
     background-image: url(images/gym-expert.png);
+    background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
+    height: 100%;
+    width: auto;
 }
-.ask-expert{
-    padding: 150px 0px 0px 150px;
+.block-expert {
+    display: grid;
+    grid-template-columns: 1fr;
     width: 30%;
-    color: white;
+    margin: 0 50px;
+    color: #ffffff;
 }
-.text-expert{
-    margin-top: 50px;
+.block-expert h3{
+    margin-bottom: 15px;
+}
+.block-expert p {
+    font-size: 1.1rem;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+/******************************* MOBILE *********************************/
+
+@media screen and (max-width:950px) {
+    .block-expert{
+        text-align: center;
+        width: 50%;
+        margin-top: 100px;
+    }
+    .block-expert p{
+        font-size: 1rem;
+    }
 }

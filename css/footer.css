@@ -1,51 +1,99 @@
-footer {
+.grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 5%;
     background-image: url(images/footer.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 100px;
+    width: 100%;
     height: 100%;
 }
-.footer-container {
-    padding: 180px 80px;
-}
 .coluna-footer {
-    width: 21%;
-    display: inline-block;
-    margin-right: 50px;
-    line-height: 30px;
+    margin-top: 50%;
+    color: #ffffff;
+    margin-bottom: 30%;
 }
-.coluna-footer > h3{
-    color: white;
-    font-weight: bold;
-    font-size: 25px;
+.coluna-footer-1 {
+    margin-left: 40px;
 }
-.footer-karla ~ p{
-    color: #ccc;
-    margin-top: 30px;    
+.coluna-footer-1 p, .depoimento{
+    margin-top: 40px;
+    font-size: 0.9rem;
 }
-.fab {
-    margin-right: 60px;
+.coluna-footer-depoimento {
+    margin-left: 20px;
 }
-.depoimento{
-    margin-top: 20px;
-    color: #ccc;
+.coluna-footer-1 i {
+    margin-right: 23%;
+}
+.coluna-footer a, .coluna-footer-1 i a {
+    color: #38b143;
+}
+.coluna-footer a:hover{
+    color: #fff;
+    transition: 0.6s;
+}
+.coluna-footer-1 i a:hover {
+    color: #ffffff;
+    background-color: #38b143;
+    padding: 5px;
+    border-radius: 20px;
+    transition: 0.6s;
+}
+.nome-depoimento {
     font-style: italic;
+    font-size: 0.8rem;
+    color: #38b143;
+    font-weight: 700;
 }
-.nome-depoimento{
-    color: #38B143;
-    font-weight: bold
-}
-.coluna-aulas > a, 
-.coluna-contato{
-    color: #ccc;
-}
-.coluna-aulas >h3{
+.coluna-aulas h3, .coluna-contato h3{
     margin-bottom: 40px;
 }
-.copyright {
-    color: #ccc;
-    text-align: center;
-    font-size: 14px;
+.coluna-aulas a{
+    color: #ffffff;
+    line-height: 2rem;
 }
-.copyright > p{
-    padding-bottom: 40px;
+.coluna-aulas a:hover {
+    color: #38b143;
+    transition: 0.6s;
+}
+.coluna-contato {
+    margin-right: 15%;
+}
+
+.coluna-contato p{
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+.copyright{
+    text-align: center;
+    bottom: 0px;
+    z-index: 1;
+    color: #ffffff;
+}
+.copyright a {
+    color: #38b143;
+}
+.copyright a:hover {
+    text-decoration: underline;
+    transition: 0.6s;
+}
+
+/***************************** MOBILE ********************************/
+@media screen and (max-width:950px) {
+    .grid-footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .coluna-footer-1, .coluna-footer-depoimento {
+        margin-top: 30%;
+    }
+    .coluna-footer-1 i{
+        margin-right: 15%;
+    }
+    .coluna-aulas{
+        margin-left: 40px;
+    }
+    .coluna-aulas, .coluna-contato {
+        margin-top: 0px;
+    }
 }

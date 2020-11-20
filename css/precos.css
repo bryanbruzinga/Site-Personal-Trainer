@@ -1,28 +1,63 @@
 .precos {
-    margin-top: 100px;
-}
-.container-precos {
     background-image: url(images/price-paralax.png);
+    padding-top: 10%;
+    padding-bottom: 10%;
     background-attachment: fixed;
-    background-size: fill;
-    padding: 100px 0px 0px 130px;
-    height: 650px; 
+    height: 100%;
 }
+.grid-precos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    width: 50%;
+    margin-left: 160px;
+    height: 500px;
+}
+
 .column-precos {
-    width: 28%;
-    display: inline-block;
-    margin-right: 25px;
-    background-color: white;
-    height: 580px;
+    background-color: #ffffff;
 }
-.img-preco{
-    width: 100%;
-    margin-bottom: 35px;
-}.valor {
+.desc-preco {
+    padding: 20px 0px 0px 20px;
+}
+.column-precos h3{
+    margin-top: 5%;
+    margin-bottom: 20px;
+}
+.column-precos li{
+    font-size: 1rem;
+}
+.column-precos ul {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+.column-precos a {
+    color: #38B143;
+}
+.column-precos a:hover {
+    border: 1px solid #38b143;
+    background-color: #38b143;
+    border-radius: 20px;
+    padding: 10px;
+    color: #ffffff;
+    transition: 0.5s;
+}
+.valor {
     font-size: 30px;
     color: #38B143;
     font-weight: bold;
 }
-.desc-preco {
-    margin-left: 35px;
+
+/******************************** MOBILE **********************************/
+@media screen and (max-width:950px) {
+    .precos {
+        height: 230vh;
+    }
+    .img-preco {
+        width: 100%;
+    }
+    .grid-precos{
+        grid-template-columns: 1fr;
+        position: relative;
+    }
 }

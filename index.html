@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/porque.css">
     <link rel="stylesheet" href="css/expert.css">
     <link rel="stylesheet" href="css/servicos.css">
@@ -21,17 +22,10 @@
     <title>Karla Personal Trainer</title>
 </head>
 <body>
-    <header class='main-home'>
-        <img src="./css/images/home1.png" id='img-home' alt="Karla personal trainer home page">       
-        <div class="container">        
+    <header class='header' id="header">        
+            <a href="index.html" class="title-karla">Karla Personal Trainer</a>       
         <nav id="navbar">
-                <a href="javascript:void(0);" class="icon" onclick="menuHamburger()">
-                    <i class="fa fa-bars"></i>
-                </a>
             <ul>
-                <li>
-                    <a href="index.html" class="title-karla active">Karla Personal Trainer</a>
-                </li>
                 <li>
                     <a href="index.html">Página Principal</a>
                 </li>
@@ -46,83 +40,84 @@
                 </li>
             </ul>          
         </nav>
+    </header>
+    <img src="./css/images/home1.png" id='img-home' alt="Karla personal trainer home page"> 
         <section class="section-home">
-            <h1 id='demo-title'>Karla Personal Trainer</h1>
+            <div class="container-home">
+            <h1 id='demo-title'>Saúde</h1>
 
             <p class='demo-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque debitis et sint quisquam sunt, ducimus facere temporibus beatae deserunt est, nobis adipisci quis exercitationem aperiam reiciendis reprehenderit officiis fuga atque.</p>
+        </div>
 
             <p class='p-membro'>
                 <a class='seja-membro' href="#">Seja um aluno</a>
             </p>
+
             <a href="#top" class="fas fa-arrow-up" id="seta-topo"></a>
 
         </section>
-    </div>
-    </header>
 
-    <main class="main-section">
-        <section class>
+        <section class='section-porque'>
 
-           <h3>Karla Personal Trainer</h6>
-           <h2>Por que ter um personal trainer?</h2>
+           <h2>Karla Personal Trainer</h2>
+           <h3>Por que ter um personal trainer?</h3>
 
-           <div class="column">
+           <div class="grid-porque">
                 
                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
                </p>
-                          
+                        
                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laborum illum corporis sapiente animi, nemo ad provident assumenda vel dignissimos praesentium quos nesciunt magnam saepe culpa facere dolorum adipisci officiis.
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
                </p>
-            </div>                     
+            </div>                    
 
-           <a href="#" class='membro-main'>Seja um aluno</a>
+           <a href="#" class='membro-porque'>Seja um aluno</a>
            <a href="#" class='saiba-mais'>Saiba Mais</a>
+
+           <img src="css/images/man.png" alt='Karla personal trainer' class="img-porque">
            
-        </section>
-        <img src="css/images/man.png" alt='Karla personal trainer' class="img-porque">
-    </main>
+        </section>        
+
     <section class="expert">
-        <div class="ask-expert">
+        <div class="block-expert">
             <h3>Karla personal trainer</h3>
             <h2>A Profissional</h2>
             <p class="text-expert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque, laboriosam nulla doloribus expedita nam ratione voluptates blanditiis omnis mollitia repellendus perferendis sint at odit debitis. Nesciunt iure aut ducimus!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque, laboriosam nulla doloribus expedita nam ratione voluptates blanditiis omnis mollitia repellendus perferendis sint at odit debitis. Nesciunt iure aut ducimus!
             </p>
         </div>
     </section>
-    <section class="servicos">
-        <div class="linha1-servicos">
 
-            <div class="small-content">
+    <section class="servicos">
+        <div class="grid-servicos">
+
+            <div class="servicos-content">
             <h3><i class="fa fa-dumbbell"></i>Treinamento de Força</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
-            <div class="small-content">
+            <div class="servicos-content">
             <h3>Avaliação Física</h3>
             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
-            <div class="small-content">
+            <div class="servicos-content">
             <h3><i class="fa fa-running"></i>Melhoria de rendimento</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
-        </div>
-        <div class="linha2-servicos">
-            <div class="small-content">
+            <div class="servicos-content">
             <h3>Curso de Yoga</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
-            <div class="small-content">
+            <div class="servicos-content">
             <h3>Curso de Pole Dance</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
-            <div class="small-content">
+            <div class="servicos-content">
             <h3>Reabilitação Física</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
@@ -131,7 +126,7 @@
     </section>
 
     <section class="precos">
-        <div class="container-precos">
+        <div class="grid-precos">
         <div class="column-precos">
             <img src="css/images/preco1.png" alt="Preços personal" class="img-preco">
 
@@ -181,7 +176,7 @@
     </section>
 
     <section>
-        <div class="container-extras">
+        <div class="grid-extras">
         
         <div class="horario">
             <h3>Karla Personal Trainer</h3>
@@ -208,8 +203,8 @@
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="coluna-footer coluna-personal">
+        <div class="grid-footer">
+            <div class="coluna-footer coluna-footer-1">
                 <a href="index.html" class="footer-karla">Karla Personal Trainer</a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis sapiente odit aut sunt alias accusamus! Corporis recusandae consectetur, animi sint quaerat hic modi! Incidunt error voluptatem laboriosam! Modi, fuga!</p>
                 <p>
@@ -225,7 +220,7 @@
                 </p>
 
             </div>
-            <div class="coluna-footer">
+            <div class="coluna-footer coluna-footer-depoimento">
                 <h3>Depoimentos</h3>
                 <p class="depoimento">"Corporis recusandae consectetur, animi sint quaerat hic modi!"</p>
                 <p class='nome-depoimento'>Smith WeberJegermanjanson <br /></p>
@@ -271,8 +266,10 @@
                 umemail@gmail.com</p>
                 
             </div>
+
+            <span class="copyright"><p>Desenvolvido por <a href="http://www.github.com/bryanbruzinga" target="_blank">Bryan da Silva Bruzinga</a></p></span>
         </div>
-        <span class="copyright"><p>Desenvolvido por <a href="http://www.github.com/bryanbruzinga" target="_blank">Bryan da Silva Bruzinga</a></p></span>
+        
     </footer>
     
 </body>

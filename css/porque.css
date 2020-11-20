@@ -1,43 +1,53 @@
-.main-section {
-    margin-top: 80px;
-    width: 70vw;
+.section-porque {
+    margin: 0 100px;
 }
-.main-section > section{
-    padding-left: 150px;
+.section-porque h2 {
+    font-size: 1.8rem;
 }
-.column {
-    display: flex;
-    align-items: center;    
-    font-size: 16px;
-    width: 100%;
-    color: #8FA0B7;
-    margin: 50px 0px 70px 0px;
+.section-porque h3 {
+    font-size: 1.5rem;
+    margin-bottom: 60px;
 }
-.demo-text, .column, .text-expert {
-    line-height: 35px;
+.section-porque h3, .section-porque h2 {
+    margin-left: 50px;
 }
-.column > p{
-    margin-right: 80px;
+
+.grid-porque {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1000px;
+    column-gap: 40px;
+    margin: 20px 0px 20px 50px;
 }
-.column ~ p {
-    text-align: justify;
+.grid-porque p {
+    font-size: 1rem;
+    margin-bottom: 40px;
 }
-a.membro-main, #botao-inscrever {    
+img.img-porque {
+    position: absolute;
+    right: 5%;
+    top: 1150px;
+}
+
+a.membro-porque{
+    margin-left: 50px;
+}
+a.membro-porque {    
     color: #38B143;
     font-weight: bold;
-    margin-right: 40px;
+    margin-right: 3vw;
 }
 a.saiba-mais{
     background-color: #38B143;
     color: white;
 }
-a.membro-main, a.saiba-mais, #botao-inscrever  {
+a.membro-porque, a.saiba-mais {
     font-size: 20px;
-    padding: 10px 90px;
+    padding: 20px 95px;
     border-radius: 20px;
     border: 5px solid #38B143;
 }
-a.membro-main:hover, #botao-inscrever:hover {
+a.membro-porque:hover {
     background-color: #38B143;
     color: white;
     transition: 0.5s;
@@ -47,8 +57,19 @@ a.saiba-mais:hover {
     transition: 0.5s;
     border-color: black;
 }
-.img-porque {
+
+@media screen and (max-width:950px) {
+img.img-porque {
+    display: block;
     position: absolute;
-    left: 1000px;
-    top: 1000px;
+    left: -9999px;
+}
+.grid-porque {
+    grid-template-columns: 1fr;
+}
+a.membro-porque, a.saiba-mais{
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+}
 }
