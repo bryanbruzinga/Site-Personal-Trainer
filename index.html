@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/porque.css">
@@ -27,22 +28,22 @@
         <nav id="navbar">
             <ul>
                 <li>
-                    <a href="index.html">Página Principal</a>
+                    <a href="#home">Página Principal</a>
                 </li>
                 <li>
-                    <a href="#">Nossos Serviços</a>
+                    <a href="#servicos">Nossos Serviços</a>
                 </li>
                 <li>
-                    <a href="#">Sobre Nós</a>
+                    <a href="#sobre">Sobre Nós</a>
                 </li>
                 <li>
-                    <a href="#">Contato</a>
+                    <a href="#contato">Contato</a>
                 </li>
             </ul>          
         </nav>
     </header>
     <img src="./css/images/home1.png" id='img-home' alt="Karla personal trainer home page"> 
-        <section class="section-home">
+        <section class="section-home" id="home">
             <div class="container-home">
             <h1 id='demo-title'>Saúde</h1>
 
@@ -72,15 +73,16 @@
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
                </p>
             </div>                    
-
+            <div class="links-porque">
            <a href="#" class='membro-porque'>Seja um aluno</a>
            <a href="#" class='saiba-mais'>Saiba Mais</a>
+        </div>
 
            <img src="css/images/man.png" alt='Karla personal trainer' class="img-porque">
            
         </section>        
 
-    <section class="expert">
+    <section class="expert" id="sobre">
         <div class="block-expert">
             <h3>Karla personal trainer</h3>
             <h2>A Profissional</h2>
@@ -89,7 +91,7 @@
         </div>
     </section>
 
-    <section class="servicos">
+    <section class="servicos" id='servicos'>
         <div class="grid-servicos">
 
             <div class="servicos-content">
@@ -184,7 +186,7 @@
             <p>Segunda a sexta</p>
             <p>08:00 - 21:00</p>            
         </div>
-        <div class="noticias">
+        <div class="noticias" id='contato'>
             <h3>Karla Personal Trainer</h3>
             <h2>Nosso Jornalzinho</h2>
             <form id="formulario" action="#" method="get">
@@ -267,9 +269,9 @@
                 
             </div>
 
-            <span class="copyright"><p>Desenvolvido por <a href="http://www.github.com/bryanbruzinga" target="_blank">Bryan da Silva Bruzinga</a></p></span>
+            
         </div>
-        
+        <span class="copyright"><p>Desenvolvido por <a href="http://www.github.com/bryanbruzinga" target="_blank"> Bryan da Silva Bruzinga</a></p></span>
     </footer>
     
 </body>

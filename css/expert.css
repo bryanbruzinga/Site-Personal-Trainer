@@ -1,7 +1,7 @@
 .expert {
     margin-top: 8%;
     padding-top: 6%;
-    padding-left: 100px;
+    padding-left: 6vw;
     background-image: url(images/gym-expert.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -17,6 +17,7 @@
 }
 .block-expert h3{
     margin-bottom: 15px;
+    color: #38B143;
 }
 .block-expert p {
     font-size: 1.1rem;

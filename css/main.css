@@ -10,7 +10,7 @@ img#img-home {
 .section-home {
     display: grid;
     margin-top: 15%;
-    margin-left: 100px;
+    margin-left: 8vw;
 }
 .section-home h1 {
     font-size: 5.1rem;
@@ -47,7 +47,7 @@ img#img-home {
 /******************************** MOBILE *********************************/
 @media screen and (max-width:950px) {
     img#img-home {
-        height: 80%;
+        height: 90%;
         width: 100%;
     }
     .container-home {

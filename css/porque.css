@@ -3,13 +3,14 @@
 }
 .section-porque h2 {
     font-size: 1.8rem;
+    color: #38B143;
 }
 .section-porque h3 {
     font-size: 1.5rem;
     margin-bottom: 60px;
 }
 .section-porque h3, .section-porque h2 {
-    margin-left: 50px;
+    margin-left: 2vw;
 }
 
 .grid-porque {
@@ -17,7 +18,7 @@
     grid-template-columns: 1fr 1fr;
     max-width: 1000px;
     column-gap: 40px;
-    margin: 20px 0px 20px 50px;
+    margin: 20px 0px 20px 2vw;
 }
 .grid-porque p {
     font-size: 1rem;
@@ -28,22 +29,22 @@ img.img-porque {
     right: 5%;
     top: 1150px;
 }
-
 a.membro-porque{
-    margin-left: 50px;
+    margin-left: 2vw;
 }
 a.membro-porque {    
     color: #38B143;
     font-weight: bold;
     margin-right: 3vw;
+    padding: 3vh 6vw;
 }
 a.saiba-mais{
     background-color: #38B143;
     color: white;
+    padding: 2.5vh 5.5vw;
 }
 a.membro-porque, a.saiba-mais {
     font-size: 20px;
-    padding: 20px 95px;
     border-radius: 20px;
     border: 5px solid #38B143;
 }
@@ -57,6 +58,13 @@ a.saiba-mais:hover {
     transition: 0.5s;
     border-color: black;
 }
+@media screen and (max-width:1450px) {
+    img.img-porque {
+        display: block;
+        position: absolute;
+        left: -9999px;
+    }
+}
 
 @media screen and (max-width:950px) {
 img.img-porque {
@@ -67,9 +75,16 @@ img.img-porque {
 .grid-porque {
     grid-template-columns: 1fr;
 }
+.links-porque {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 70vw;
+}
+.membro-porque {
+    margin-bottom: 20px;
+}
 a.membro-porque, a.saiba-mais{
-    display: flex;
-    margin-bottom: 10px;
-    padding: 10px;
+    font-size: 18px;
+    text-align: center;
 }
 }

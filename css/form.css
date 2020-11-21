@@ -9,6 +9,9 @@
 .horario h2, .noticias h2 {
     margin-bottom: 30px;
 }
+.horario h3, .noticias h3 {
+    color: #38B143;
+}
 .noticias {
     width: 75%;
 }
@@ -49,6 +52,7 @@
     .horario {
         margin: 0 auto;
         margin-bottom: 10%;
+        width: 75%;
     }
     .noticias {
         margin: 0 auto;

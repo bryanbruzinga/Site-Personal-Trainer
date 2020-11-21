@@ -1,5 +1,5 @@
 .servicos {
-    margin: 8% 0px 8% 150px;
+    margin: 8% 0px 8% 10vw;
 }
 .grid-servicos {
     display: grid;
@@ -16,13 +16,17 @@
     font-size: 1rem;
     margin-top: 10px;
 }
-
-
+#servicos {
+    transition: 0.6s;
+}
 
 /************************** MOBILE ************************************/
 @media screen and (max-width:950px) {
     .grid-servicos {
         display: flex;
         flex-wrap: wrap;
+    }
+    .servicos-content {
+        max-width: 90%;
     }
 }
