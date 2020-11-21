@@ -72,6 +72,10 @@ img.img-porque {
     position: absolute;
     left: -9999px;
 }
+.section-porque {
+    width: 80%;
+    margin-left: 15%;
+}
 .grid-porque {
     grid-template-columns: 1fr;
 }

@@ -57,10 +57,15 @@
         height: 150vh;
 }
 }
-
 @media screen and (max-width:850px) {
     .precos {
-        height: 300vh;
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .precos {
+        height: 180vh;
     }
     .img-preco {
         width: 100%;
@@ -69,5 +74,10 @@
         grid-template-columns: 1fr;
         position: relative;
         width: 80%;
+    }
+}
+@media screen and (max-width:550px) {
+    .precos {
+        height: 210vh;
     }
 }

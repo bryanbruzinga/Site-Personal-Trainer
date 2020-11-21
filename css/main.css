@@ -47,7 +47,7 @@ img#img-home {
 /******************************** MOBILE *********************************/
 @media screen and (max-width:950px) {
     img#img-home {
-        height: 90%;
+        height: 85%;
         width: 100%;
     }
     .container-home {
