@@ -1,27 +1,32 @@
-class RolagemSuave {
-    constructor(links) {
-        this.linkElements = document.querySelectorAll(links)
+function initScrollSuave() {
+    const linksInternos = document.querySelectorAll('#navbar a[href^="#"]')
+    const linkTopo = document.querySelector('#seta-topo')
 
-        this.addClickEvent()//Isso faz com que sempre seja executado
+    function scrollToSection(event) {
+        event.preventDefault()
+        const href = event.currentTarget.getAttribute('href')
+        const section = document.querySelector(href)    
+
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        })
     }
-    //Métodos
-    handleClick(event) {
+
+    function scrollToTop(event) {
         event.preventDefault()
         const href = event.currentTarget.getAttribute('href')
         const section = document.querySelector(href)
-        window.scrollTo({
-            top: section.offsetTop - (window.innerHeight - section.clientHeight)/2, //Cálculo para ficar mais centralizado
-            behavior: "smooth"
-        })
-        console.log(section)
-    }
-    addClickEvent() {
-        this.linkElements.forEach(link =>{
-            link.addEventListener('click', this.handleClick)
+        section.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         })
     }
-    
+
+    linkTopo.addEventListener('click', scrollToTop)
+
+    linksInternos.forEach((link) => {
+        link.addEventListener('click', scrollToSection)
+    })
 }
-//^= dentro do href significa que começa com
-const scroll = new RolagemSuave("a[href^='#'")
-console.log(href)
+initScrollSuave()

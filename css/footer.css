@@ -1,111 +1,111 @@
 .grid-footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    margin-top: 5%;
-    background-image: url(images/footer.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-}
-.coluna-footer {
-    margin-top: 50%;
-    color: #ffffff;
-    margin-bottom: 30%;
-}
-.coluna-footer-1 {
-    margin-left: 40px;
-}
-.coluna-footer-1 p, .depoimento{
-    margin-top: 40px;
-    font-size: 0.9rem;
-}
-.coluna-footer-depoimento {
-    margin-left: 20px;
-}
-.coluna-footer-1 i {
-    margin-right: 5vw;
-}
-.coluna-footer a, .coluna-footer-1 i a {
-    color: #38b143;
-}
-.coluna-footer a:hover{
-    color: #fff;
-    transition: 0.6s;
-}
-.coluna-footer-1 i a:hover {
-    color: #ffffff;
-    background-color: #38b143;
-    padding: 5px;
-    border-radius: 20px;
-    transition: 0.6s;
-}
-.nome-depoimento {
-    font-style: italic;
-    font-size: 0.8rem;
-    color: #38b143;
-    font-weight: 700;
-}
-.coluna-aulas h3, .coluna-contato h3{
-    margin-bottom: 40px;
-}
-.coluna-aulas a{
-    color: #ffffff;
-    line-height: 2rem;
-}
-.coluna-aulas a:hover {
-    color: #38b143;
-    transition: 0.6s;
-}
-.coluna-contato {
-    margin-right: 15%;
-}
-.coluna-contato a{
-    color: #fff;
-    text-decoration: underline;
-}
-.coluna-contato a:hover {
-    color: #38b143;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin-top: 5%;
+  background-image: url(images/footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
 }
 
-.coluna-contato p, .coluna-contato a{
-    font-size: 0.9rem;
-    margin-bottom: 15px;
+.grid-footer div {
+  color: #ffffff;
 }
-.copyright p, .copyright a{
-    background-color: #000;
-    text-align: center;
-    color: #ffffff;
-    font-size: 0.8rem;
+.coluna-footer {
+  margin-top: 50%;
+  margin-bottom: 30%;
+  max-width: 90%;
+  text-align: center;
+}
+.coluna-footer-1 {
+  margin-left: 40px;
+}
+.coluna-footer-1 p,
+.depoimento {
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+.coluna-footer-depoimento {
+  margin-left: 20px;
+}
+.redes-sociais {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.coluna-footer a,
+.coluna-footer-1 i a {
+  color: #38b143;
+}
+.coluna-footer a:hover {
+  color: #fff;
+  transition: 0.6s;
+}
+.coluna-footer-1 i a:hover {
+  color: #ffffff;
+  background-color: #38b143;
+  padding: 5px;
+  border-radius: 20px;
+  transition: 0.6s;
+}
+.nome-depoimento {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #38b143;
+  font-weight: bold;
+}
+.coluna-aulas h3,
+.coluna-contato h3 {
+  margin-bottom: 40px;
+}
+.coluna-aulas a {
+  color: #38b143;
+  line-height: 2rem;
+}
+.coluna-aulas a:hover {
+  color: #015008;
+  transition: 0.6s;
+}
+.coluna-contato a {
+  color: #fff;
+}
+.coluna-contato a:hover {
+  color: #38b143;
+}
+.coluna-contato p,
+.coluna-contato a {
+  font-size: 0.825rem;
+  margin-bottom: 15px;
+}
+.copyright p,
+.copyright a {
+  background-color: #000;
+  text-align: center;
+  color: #ffffff;
+  font-size: 0.825rem;
 }
 .copyright a {
-    color: #38b143;
-}
-.copyright a:hover {
-    text-decoration: underline;
-    transition: 0.6s;
+  color: #38b143;
 }
 
 /***************************** MOBILE ********************************/
-@media screen and (max-width:1250px) {
-    .coluna-footer-1 i {
-        margin-right: 3vw;
-    }
-}
-@media screen and (max-width:950px) {
-    .grid-footer {
-        grid-template-columns: 1fr 1fr;
-    }
-    .coluna-footer-1, .coluna-footer-depoimento {
-        margin-top: 30%;
-    }
-    .coluna-footer-1 i{
-        margin-right: 15%;
-    }
-    .coluna-aulas{
-        margin-left: 40px;
-    }
-    .coluna-aulas, .coluna-contato {
-        margin-top: 0px;
-    }
+@media (max-width: 414px) {
+  .grid-footer {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 100%;
+    margin: 40px 0 0 0;
+  }
+  .coluna-footer {
+    margin-bottom: 0;
+    max-width: 90%;
+    margin-top: 60px;
+  }
+  .coluna-footer-depoimento,
+  .coluna-footer-1 {
+    margin-left: 0;
+  }
 }

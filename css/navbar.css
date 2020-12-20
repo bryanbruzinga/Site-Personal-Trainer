@@ -1,54 +1,62 @@
 header.header {
-    display:flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: fixed;
-    top: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: 20px;
 }
-header a, nav ul {
-    padding: 40px;
-    color: #ffffff;
+header a,
+nav ul li a {
+  padding: 20px;
+  color: #ffffff;
+  font-size: 1.125rem;
 }
+
 .title-karla:hover {
-    background-color: #38b143;
-    transition: 0.6s;
-    color: #ffffff;
+  background-color: #38b143;
+  transition: 0.6s;
+  color: #ffffff;
 }
 header a:hover {
-    color: #38b143;
-    transition: 0.6s;
+  color: #38b143;
+  transition: 0.6s;
 }
 
 nav ul {
-    display: flex;
+  display: flex;
+  justify-content: flex-end;
 }
 .nav-fixed-on {
-    background-color: #000000;
-    width: 100%;
-    opacity: 0.98;
-    top: 0px;
-    z-index: 1;
+  padding-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  z-index: 1;
+  transition: 0.3s;
 }
 .nav-fixed-off {
-    background-color: transparent;
+  background-color: transparent;
 }
 
 /******************************** MOBILE ************************************/
 
-@media screen and (max-width:1190px) {
-    header a, nav ul {
-        padding: 15px;
-    }
+@media screen and (max-width: 1190px) {
+  header a,
+  nav ul {
+    padding: 15px;
+  }
 }
-@media screen and (max-width:950px) {
-    #navbar ul li a {
-        position:absolute;
-        left: 1000px;
-    }
-    header a {
-        margin: 0 auto;
-    }
-    .section-home {
-        margin-bottom: 90px;
-    }
+@media screen and (max-width: 950px) {
+  #navbar ul li a {
+    position: absolute;
+    left: 1000px;
+  }
+  header a {
+    margin: 0 auto;
+  }
+  .section-home {
+    margin-bottom: 90px;
+  }
 }

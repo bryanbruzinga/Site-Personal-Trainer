@@ -18,14 +18,16 @@
     <script src="https://kit.fontawesome.com/81ec1aaa96.js" crossorigin="anonymous" defer></script>
     <script src="js/navbar.js" defer></script>
     <script src="js/linksSmooth.js" defer></script>
-    <script src="js/menu.js" defer></script>
-    <script src="js/img-changer.js" defer onload='imgChanger()'></script>
+    <script src="js/img-changer.js" defer></script>
     <script src="js/go-top.js" defer></script>
+    <script src="js/animation.js" defer></script>
     <title>Karla Personal Trainer</title>
 </head>
 <body>
-    <header class='header' id="header">        
-            <a href="index.html" class="title-karla">Karla Personal Trainer</a>       
+    <header class='header' id="header">  
+        <div>    
+            <a href="index.html" class="title-karla">Karla Personal Trainer</a>     
+        </div>    
         <nav id="navbar">
             <ul>
                 <li>
@@ -44,22 +46,22 @@
         </nav>
     </header>
     <img src="./css/images/home1.png" id='img-home' alt="Karla personal trainer home page"> 
-        <section class="section-home" id="home">
+        <section class="section-home js-anim" id="home">
             <div class="container-home">
-            <h1 id='demo-title'>Saúde</h1>
+                <h1 id='demo-title'>Saúde</h1>
 
-            <p class='demo-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque debitis et sint quisquam sunt, ducimus facere temporibus beatae deserunt est, nobis adipisci quis exercitationem aperiam reiciendis reprehenderit officiis fuga atque.</p>
-        </div>
+                <p class='demo-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque debitis et sint quisquam sunt, ducimus facere temporibus beatae deserunt est, nobis adipisci quis exercitationem aperiam reiciendis reprehenderit officiis fuga atque.</p>
+            </div>
 
             <p class='p-membro'>
                 <a class='seja-membro' href="index.html">Seja um aluno</a>
-            </p>
-
-            <a href="#home" class="fas fa-arrow-up" id="seta-topo"></a>
+            </p>            
 
         </section>
 
-        <section class='section-porque'>
+        <a href="#home" class="fas fa-arrow-up" id="seta-topo"></a>
+
+        <section class='section-porque js-anim'>
 
            <h2>Karla Personal Trainer</h2>
            <h3>Por que ter um personal trainer?</h3>
@@ -83,7 +85,7 @@
            
         </section>        
 
-    <section class="expert" id="sobre">
+    <section class="expert js-anim" id="sobre">
         <div class="block-expert">
             <h3>Karla personal trainer</h3>
             <h2>A Profissional</h2>
@@ -92,7 +94,7 @@
         </div>
     </section>
 
-    <section class="servicos" id='servicos'>
+    <section class="servicos js-anim" id='servicos'>
         <div class="grid-servicos">
 
             <div class="servicos-content">
@@ -101,7 +103,7 @@
             </div>
 
             <div class="servicos-content">
-            <h3>Avaliação Física</h3>
+            <h3><i class="fa fa-dumbbell"></i>Avaliação Física</h3>
             <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
@@ -111,24 +113,24 @@
             </div>
 
             <div class="servicos-content">
-            <h3>Curso de Yoga</h3>
+            <h3><i class="fa fa-dumbbell"></i>Curso de Yoga</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
             <div class="servicos-content">
-            <h3>Curso de Pole Dance</h3>
+            <h3><i class="fa fa-dumbbell"></i>Curso de Pole Dance</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
             <div class="servicos-content">
-            <h3>Reabilitação Física</h3>
+            <h3><i class="fa fa-dumbbell"></i>Reabilitação Física</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
             </div>
 
         </div>
     </section>
 
-    <section class="precos">
+    <section class="precos js-anim">
         <div class="grid-precos">
         <div class="column-precos">
             <img src="css/images/preco1.png" alt="Preços personal" class="img-preco">
@@ -178,7 +180,7 @@
         </div>        
     </section>
 
-    <section>
+    <section class="js-anim">
         <div class="grid-extras">
         
         <div class="horario">
@@ -205,22 +207,22 @@
     </div>
     </section>
 
-    <footer>
+    <footer class="js-anim">
         <div class="grid-footer">
             <div class="coluna-footer coluna-footer-1">
                 <a href="index.html" class="footer-karla">Karla Personal Trainer</a>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis sapiente odit aut sunt alias accusamus! Corporis recusandae consectetur, animi sint quaerat hic modi! Incidunt error voluptatem laboriosam! Modi, fuga!</p>
-                <p>
-                    <i class='fa'>
-                        <a href="index.html" class="fab fa-instagram"></a>
-                    </i>
-                    <i class='fa'>
-                        <a href="index.html" class="fab fa-facebook"></a>
-                    </i>
-                    <i class='fa'>
-                        <a href="index.html" class="fab fa-twitter"></a>
-                    </i>
-                </p>
+                    <ul class="redes-sociais">
+                        <li>
+                            <i class='fa'><a href="index.html" class="fab fa-instagram"></a></i>
+                        </li>
+                        <li>
+                            <i class='fa'><a href="index.html" class="fab fa-facebook"></a></i>
+                        </li>
+                        <li>
+                            <i class='fa'><a href="index.html" class="fab fa-twitter"></a></i>
+                        </li>
+                    </ul>
 
             </div>
             <div class="coluna-footer coluna-footer-depoimento">

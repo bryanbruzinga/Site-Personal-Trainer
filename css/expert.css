@@ -1,40 +1,57 @@
 .expert {
-    margin-top: 8%;
-    padding-top: 6%;
-    padding-left: 6vw;
-    background-image: url(images/gym-expert.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: auto;
+  margin-top: 8%;
+  padding-top: 6%;
+  background-image: url(images/gym-expert.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
 }
 .block-expert {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 30%;
-    margin: 0 50px;
-    color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr;
+  max-width: 35%;
+  margin: 0 9%;
+  color: #ffffff;
 }
-.block-expert h3{
-    margin-bottom: 15px;
-    color: #38B143;
+.block-expert h3 {
+  margin-bottom: 15px;
+  color: #38b143;
 }
 .block-expert p {
-    font-size: 1.1rem;
-    margin-top: 70px;
-    margin-bottom: 200px;
+  font-size: 0.825rem;
+  margin-top: 70px;
 }
 
 /******************************* MOBILE *********************************/
-
-@media screen and (max-width:950px) {
-    .block-expert{
-        text-align: center;
-        width: 80%;
-        margin-top: 100px;
-        margin-left: 5%;
-    }
-    .block-expert p{
-        font-size: 1rem;
-    }
+@media (max-width: 1024px) {
+  .expert {
+    height: 80vh;
+  }
+  .block-expert {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width: 950px) {
+  .block-expert {
+    text-align: center;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: 5%;
+  }
+  .block-expert p {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 414px) {
+  .expert {
+    height: 80vh;
+  }
+  .block-expert {
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
