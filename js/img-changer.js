@@ -1,4 +1,4 @@
-let banner = ["../css/images/home1.png", "../css/images/home2.png", "../css/images/home3.png"]
+let banner = ["css/images/home1.png", "css/images/home2.png", "css/images/home3.png"]
 let bannerAtual = 0
 let h1text = ["Saúde", "Energia", "Estilo de Vida"]
 
