@@ -1,4 +1,4 @@
-header.header {
+#navbar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -6,13 +6,18 @@ header.header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding-top: 20px;
+  padding: 20px;
+  z-index: 5;
 }
-header a,
+.header a,
 nav ul li a {
   padding: 20px;
   color: #ffffff;
   font-size: 1.125rem;
+}
+#navbar ul li a:hover {
+  color: #38b143;
+  transition: .5s;
 }
 
 .title-karla:hover {
@@ -20,8 +25,7 @@ nav ul li a {
   transition: 0.6s;
   color: #ffffff;
 }
-header a:hover {
-  color: #38b143;
+.header a:hover {
   transition: 0.6s;
 }
 
@@ -42,21 +46,8 @@ nav ul {
 
 /******************************** MOBILE ************************************/
 
-@media screen and (max-width: 1190px) {
-  header a,
-  nav ul {
-    padding: 15px;
-  }
-}
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 992px) {
   #navbar ul li a {
-    position: absolute;
-    left: 1000px;
-  }
-  header a {
-    margin: 0 auto;
-  }
-  .section-home {
-    margin-bottom: 90px;
+    display: none;
   }
 }

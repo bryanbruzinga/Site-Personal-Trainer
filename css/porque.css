@@ -1,6 +1,10 @@
 .section-porque {
-  margin-left: 7%;
+  margin-top: 40px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 100px;
+  
 }
 .section-porque h2 {
   font-size: 1.8rem;
@@ -8,11 +12,7 @@
 }
 .section-porque h3 {
   font-size: 1.5rem;
-  margin-bottom: 60px;
-}
-.section-porque h3,
-.section-porque h2 {
-  margin-left: 2vw;
+  margin-bottom: 40px;
 }
 
 .grid-porque {
@@ -20,25 +20,26 @@
   grid-template-columns: 1fr 1fr;
   max-width: 850px;
   column-gap: 40px;
-  margin: 40px 0px 20px 2vw;
   position: relative;
 }
 .grid-porque p {
   font-size: 0.825rem;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 img.img-porque {
   position: absolute;
-  right: 5%;
-  top: 120px;
+  right: 40px;
+  top: 100px;
 }
-a.membro-porque {
-  margin-left: 2vw;
+.links-porque {
+  display: flex;
+  max-width: 700px;
+  justify-content: space-between;
 }
+
 a.membro-porque {
   color: #38b143;
   font-weight: bold;
-  margin-right: 3vw;
   padding: 3vh 6vw;
 }
 a.saiba-mais {
@@ -65,39 +66,44 @@ a.saiba-mais:hover {
 
 /*********************** MOBILE ************************/
 
-@media (max-width: 1100px) {
+@media (max-width: 1330px) {
+  .grid-porque {
+    max-width: 90%;
+  }
   img.img-porque {
     display: none;
   }
 }
-@media (max-width: 1024px) {
-  a.membro-porque,
-  a.saiba-mais {
-    padding: 20px 35px;
+@media (max-width: 900px) {
+  .section-porque {
+    margin-left: 0;
+  }
+  .section-porque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  a.membro-porque {
+    margin-right: 20px;
+  }
+  .grid-porque {
+    display: flex;
+    flex-direction: column;
   }
 }
 @media (max-width: 414px) {
-  .grid-porque,
-  .links-porque {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 90%;
-    margin: 0;
-  }
+  
   .section-porque h3,
   .section-porque h2 {
     font-size: 1rem;
-    text-align: center;
-    margin-left: 0;
     max-width: 90%;
   }
-  .links-porque a {
-    padding: 10px;
+  .links-porque {
+    margin: 20px 0;
   }
-  .links-porque a:first-child {
-    margin-bottom: 10px;
-  }
+  a.membro-porque,
+  a.saiba-mais {
+  font-size: 0.825rem;
+}
 }

@@ -1,110 +1,89 @@
-img#img-home {
-  display: block;
-  position: absolute;
-  opacity: 0.98;
-  max-height: 100vh;
+.header {
+  background: url('./images/home1.png') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
   width: 100%;
-  top: 0%;
-  z-index: -1;
+  animation: fadeIn .6s linear forwards;
+}
+
+.animation {
+  animation: fadeIn .6s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: .5;
+  } to {
+    opacity: 1;
+  }
 }
 .section-home {
-  height: 80vh;
-  margin-top: 15%;
-  margin-left: calc(5% - 10px);
+  padding-top: 200px;
 }
 .section-home h1 {
   font-size: 3.5rem;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .section-home p {
-  font-size: 0.925rem;
+  font-size: 1rem;
+  max-width: 900px;
 }
 .section-home h1,
 .section-home p {
   color: #ffffff;
 }
 .container-home {
-  max-width: 50%;
-}
-.p-membro {
+  max-width: 70%;
+  margin: 0 auto;
   text-align: center;
-  margin-top: 5%;
 }
-.p-membro a {
+.botao-membro {
+  text-align: center;
+  margin-top: 70px;
+}
+.botao-membro a {
   border: 5px solid #38b043;
   border-radius: 8px;
-  padding: 15px 40px;
+  padding: 20px;
+  width: 15rem;
   background-color: rgba(0, 0, 0, 0.5);
   color: #38b043;
-  transition: 0.4s;
+  transition: .4s;
+  display: block;
+  margin: 0 auto;
 }
-.p-membro a:hover {
+.botao-membro a:hover {
   color: #ffffff;
   background-color: #38b043;
+  transition: .4s;
   opacity: 1;
 }
 
 /******************************** MOBILE *********************************/
 @media (max-width: 1100px) {
-  img#img-home {
-    height: 100vh;
-  }
   .p-membro {
     margin-top: 100px;
   }
-  .section-home {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
   .section-home p {
     font-size: 0.825rem;
   }
-  .container-home {
-    max-width: 80%;
-  }
 }
-@media (max-width: 1024px) {
-  img#img-home {
-    height: 80vh;
-  }
+
+@media (max-width:823px) {
   .section-home {
-    height: 70vh;
+    padding-top: 100px;
   }
 }
-@media (max-width: 769px) {
-  img#img-home {
-    height: 60vh;
-  }
-}
+
 @media (max-width: 414px) {
-  img#img-home {
-    height: 80vh;
-  }
-  .section-home {
-    height: 70vh;
+  .container-home {
+    max-width: 90%;
   }
   .section-home h1 {
-    font-size: 2rem;
-    margin-top: 50px;
-    text-align: center;
+    font-size: 1.5rem;
   }
   .section-home p {
     font-size: 0.825rem;
-    text-align: center;
-  }
-  .p-membro a {
-    border: 1px solid #38b043;
-    padding: 10px 20px;
-  }
-}
-@media (max-width: 320px) {
-  img#img-home {
-    height: 100vh;
-  }
-  .section-home {
-    height: 90vh;
   }
 }

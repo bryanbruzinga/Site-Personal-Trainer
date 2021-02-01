@@ -1,281 +1,375 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="css/images/favicon.ico" type="image/x-icon"/>
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/porque.css">
-    <link rel="stylesheet" href="css/expert.css">
-    <link rel="stylesheet" href="css/servicos.css">
-    <link rel="stylesheet" href="css/precos.css">
-    <link rel="stylesheet" href="css/form.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/81ec1aaa96.js" crossorigin="anonymous" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="css/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/porque.css" />
+    <link rel="stylesheet" href="css/expert.css" />
+    <link rel="stylesheet" href="css/servicos.css" />
+    <link rel="stylesheet" href="css/precos.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/81ec1aaa96.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
     <script src="js/navbar.js" defer></script>
-    <script src="js/linksSmooth.js" defer></script>
     <script src="js/img-changer.js" defer></script>
+    <script src="js/linksSmooth.js" defer></script>
     <script src="js/go-top.js" defer></script>
     <script src="js/animation.js" defer></script>
+    <script src="js/ActiveClass.js" defer></script>
     <title>Karla Personal Trainer</title>
-</head>
-<body>
-    <header class='header' id="header">  
-        <div>    
-            <a href="index.html" class="title-karla">Karla Personal Trainer</a>     
-        </div>    
-        <nav id="navbar">
-            <ul>
-                <li>
-                    <a href="#home">Página Principal</a>
-                </li>
-                <li>
-                    <a href="#servicos">Nossos Serviços</a>
-                </li>
-                <li>
-                    <a href="#sobre">Sobre Nós</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-            </ul>          
-        </nav>
-    </header>
-    <img src="./css/images/home1.png" id='img-home' alt="Karla personal trainer home page"> 
-        <section class="section-home js-anim" id="home">
-            <div class="container-home">
-                <h1 id='demo-title'>Saúde</h1>
-
-                <p class='demo-text'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque debitis et sint quisquam sunt, ducimus facere temporibus beatae deserunt est, nobis adipisci quis exercitationem aperiam reiciendis reprehenderit officiis fuga atque.</p>
-            </div>
-
-            <p class='p-membro'>
-                <a class='seja-membro' href="index.html">Seja um aluno</a>
-            </p>            
-
-        </section>
-
-        <a href="#home" class="fas fa-arrow-up" id="seta-topo"></a>
-
-        <section class='section-porque js-anim'>
-
-           <h2>Karla Personal Trainer</h2>
-           <h3>Por que ter um personal trainer?</h3>
-
-           <div class="grid-porque">
-                
-               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
-               </p>
-                        
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laborum illum corporis sapiente animi, nemo ad provident assumenda vel dignissimos praesentium quos nesciunt magnam saepe culpa facere dolorum adipisci officiis.
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque soluta recusandae!
-               </p>
-            </div>                    
-            <div class="links-porque">
-           <a href="index.html" class='membro-porque'>Seja um aluno</a>
-           <a href="index.html" class='saiba-mais'>Saiba Mais</a>
+  </head>
+  <body>
+    <div class="header">
+      <nav id="navbar">
+        <div class="link-karla">
+          <a href="index.html" class="title-karla">Karla Personal Trainer</a>
         </div>
+        <ul>
+          <li>
+            <a class="ativo" href="#home">Página Principal</a>
+          </li>
+          <li>
+            <a href="#servicos">Nossos Serviços</a>
+          </li>
+          <li>
+            <a href="#sobre">Sobre Nós</a>
+          </li>
+          <li>
+            <a href="#contato">Contato</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="section-home js-anim" id="home">
+        <div class="container-home">
+          <h1>Saúde</h1>
 
-           <img src="css/images/man.png" alt='Karla personal trainer' class="img-porque">
-           
-        </section>        
-
-    <section class="expert js-anim" id="sobre">
-        <div class="block-expert">
-            <h3>Karla personal trainer</h3>
-            <h2>A Profissional</h2>
-            <p class="text-expert">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque, laboriosam nulla doloribus expedita nam ratione voluptates blanditiis omnis mollitia repellendus perferendis sint at odit debitis. Nesciunt iure aut ducimus!
-            </p>
+          <p class="demo-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque
+            debitis et sint quisquam sunt, ducimus facere temporibus beatae
+            deserunt est.
+          </p>
+          <p class="botao-membro">
+            <a href="index.html">Seja um aluno</a>
+          </p>
         </div>
+      </section>
+    </div>
+
+    <a href="#home" class="fas fa-arrow-up" id="seta-topo"></a>
+
+    <section class="section-porque js-anim">
+      <h2>Karla Personal Trainer</h2>
+      <h3>Por que ter um personal trainer?</h3>
+
+      <div class="grid-porque">
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+          debitis ratione ab expedita assumenda facere tempore, ad sint maiores
+          corrupti quae autem sunt quibusdam. Perferendis eaque animi itaque
+          soluta recusandae! Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Aliquid debitis ratione ab expedita assumenda facere tempore, ad
+          sint maiores corrupti quae autem sunt quibusdam. Perferendis eaque
+          animi itaque soluta recusandae!
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt laborum
+          illum corporis sapiente animi, nemo ad provident assumenda vel
+          dignissimos praesentium quos nesciunt magnam saepe culpa facere
+          dolorum adipisci officiis. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Aliquid debitis ratione ab expedita assumenda facere
+          tempore, ad sint maiores corrupti quae autem sunt quibusdam.
+          Perferendis eaque animi itaque soluta recusandae!
+        </p>
+      </div>
+      <div class="links-porque">
+        <a href="index.html" class="membro-porque">Seja um aluno</a>
+        <a href="index.html" class="saiba-mais">Saiba Mais</a>
+      </div>
+
+      <img
+        src="css/images/man.png"
+        alt="Karla personal trainer"
+        class="img-porque"
+      />
     </section>
 
-    <section class="servicos js-anim" id='servicos'>
-        <div class="grid-servicos">
+    <section class="expert js-anim" id="sobre">
+      <div class="block-expert">
+        <h3>Karla personal trainer</h3>
+        <h2>A Profissional</h2>
+        <p class="text-expert">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eaque,
+          laboriosam nulla doloribus expedita nam ratione voluptates blanditiis
+          omnis mollitia repellendus perferendis sint at odit debitis. Nesciunt
+          iure aut ducimus!
+        </p>
+      </div>
+    </section>
 
-            <div class="servicos-content">
-            <h3><i class="fa fa-dumbbell"></i>Treinamento de Força</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
-            </div>
-
-            <div class="servicos-content">
-            <h3><i class="fa fa-dumbbell"></i>Avaliação Física</h3>
-            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
-            </div>
-
-            <div class="servicos-content">
-            <h3><i class="fa fa-running"></i>Melhoria de rendimento</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
-            </div>
-
-            <div class="servicos-content">
-            <h3><i class="fa fa-dumbbell"></i>Curso de Yoga</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
-            </div>
-
-            <div class="servicos-content">
-            <h3><i class="fa fa-dumbbell"></i>Curso de Pole Dance</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
-            </div>
-
-            <div class="servicos-content">
-            <h3><i class="fa fa-dumbbell"></i>Reabilitação Física</h3>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit tempore obcaecati, perspiciatis officia odit veniam alias suscipit totam velit in? Harum blanditiis in culpa odit, qui facere praesentium nulla.</p>
-            </div>
-
+    <section class="servicos js-anim" id="servicos">
+      <div class="grid-servicos">
+        <div class="servicos-content">
+          <h3><i class="fa fa-dumbbell"></i>Treinamento de Força</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit
+            tempore obcaecati, perspiciatis officia odit veniam alias suscipit
+            totam velit in? Harum blanditiis in culpa odit, qui facere
+            praesentium nulla.
+          </p>
         </div>
+
+        <div class="servicos-content">
+          <h3><i class="fa fa-dumbbell topo-mobile"></i>Avaliação Física</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit
+            tempore obcaecati, perspiciatis officia odit veniam alias suscipit
+            totam velit in? Harum blanditiis in culpa odit, qui facere
+            praesentium nulla.
+          </p>
+        </div>
+
+        <div class="servicos-content">
+          <h3>
+            <i class="fa fa-running topo-mobile"></i>Melhoria de rendimento
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit
+            tempore obcaecati, perspiciatis officia odit veniam alias suscipit
+            totam velit in? Harum blanditiis in culpa odit, qui facere
+            praesentium nulla.
+          </p>
+        </div>
+
+        <div class="servicos-content">
+          <h3><i class="fa fa-dumbbell topo"></i>Curso de Yoga</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit
+            tempore obcaecati, perspiciatis officia odit veniam alias suscipit
+            totam velit in? Harum blanditiis in culpa odit, qui facere
+            praesentium nulla.
+          </p>
+        </div>
+
+        <div class="servicos-content">
+          <h3><i class="fa fa-dumbbell topo"></i>Curso de Pole Dance</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit
+            tempore obcaecati, perspiciatis officia odit veniam alias suscipit
+            totam velit in? Harum blanditiis in culpa odit, qui facere
+            praesentium nulla.
+          </p>
+        </div>
+
+        <div class="servicos-content">
+          <h3><i class="fa fa-dumbbell topo"></i>Reabilitação Física</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio fugit
+            tempore obcaecati, perspiciatis officia odit veniam alias suscipit
+            totam velit in? Harum blanditiis in culpa odit, qui facere
+            praesentium nulla.
+          </p>
+        </div>
+      </div>
     </section>
 
     <section class="precos js-anim">
-        <div class="grid-precos">
+      <div class="grid-precos">
         <div class="column-precos">
-            <img src="css/images/preco1.png" alt="Preços personal" class="img-preco">
+          <img src="css/images/preco1.png" alt="Preços personal" />
 
-            <div class="desc-preco">
-            <p><span class='valor'>R$ 50</span> / Mês</p>            
+          <div class="desc-preco">
+            <p><span class="valor">R$ 50</span> / Mês</p>
             <h3>Aulas para Mulheres</h3>
             <ul>
-                <li>Perspiciatis officia odit veniam</li>
-                <li>Qui facere praesentium nulla</li>
-                <li>Odio fugit tempore obcaecati</li>
+              <li>Perspiciatis officia odit veniam</li>
+              <li>Qui facere praesentium nulla</li>
+              <li>Odio fugit tempore obcaecati</li>
             </ul>
             <a href="index.html">Veja Mais</a>
-        </div>
-        </div>
-
-        <div class="column-precos">
-            <img src="css/images/preco2.png" alt="Preços personal" class="img-preco">
-
-            <div class="desc-preco">
-            <p><span class='valor'>R$ 50</span> / Mês</p>            
-            <h3>Aulas para Mulheres</h3>
-            <ul>
-                <li>Perspiciatis officia odit veniam</li>
-                <li>Qui facere praesentium nulla</li>
-                <li>Odio fugit tempore obcaecati</li>
-            </ul>
-            <a href="index.html">Veja Mais</a>
-        </div>
+          </div>
         </div>
 
         <div class="column-precos">
-            <img src="css/images/preco3.png" alt="Preços personal" class="img-preco">
+          <img src="css/images/preco2.png" alt="Preços personal" />
 
-            <div class="desc-preco">
-            <p><span class='valor'>R$ 50</span> / Mês</p>
-            
+          <div class="desc-preco">
+            <p><span class="valor">R$ 50</span> / Mês</p>
             <h3>Aulas para Mulheres</h3>
             <ul>
-                <li>Perspiciatis officia odit veniam</li>
-                <li>Qui facere praesentium nulla</li>
-                <li>Odio fugit tempore obcaecati</li>
+              <li>Perspiciatis officia odit veniam</li>
+              <li>Qui facere praesentium nulla</li>
+              <li>Odio fugit tempore obcaecati</li>
             </ul>
             <a href="index.html">Veja Mais</a>
-            </div>
+          </div>
         </div>
-        </div>        
+
+        <div class="column-precos">
+          <img src="css/images/preco3.png" alt="Preços personal" />
+
+          <div class="desc-preco">
+            <p><span class="valor">R$ 50</span> / Mês</p>
+
+            <h3>Aulas para Mulheres</h3>
+            <ul>
+              <li>Perspiciatis officia odit veniam</li>
+              <li>Qui facere praesentium nulla</li>
+              <li>Odio fugit tempore obcaecati</li>
+            </ul>
+            <a href="index.html">Veja Mais</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="js-anim">
-        <div class="grid-extras">
-        
+      <div class="grid-extras">
         <div class="horario">
-            <h3>Karla Personal Trainer</h3>
-            <h2>Horário de Atendimento</h2>
-            <p>Segunda a sexta</p>
-            <p>08:00 - 21:00</p>            
+          <h3>Karla Personal Trainer</h3>
+          <h2>Horário de Atendimento</h2>
+          <p>Segunda a sexta</p>
+          <p>08:00 - 21:00</p>
         </div>
-        <div class="noticias" id='contato'>
-            <h3>Karla Personal Trainer</h3>
-            <h2>Nosso Jornalzinho</h2>
-            <form id="formulario" action="#" method="get">
-                <label for="nome"></label>
-                <input type="text" name="nome" id="nome" placeholder="Seu Nome"/><br />
+        <div class="noticias" id="contato">
+          <h3>Karla Personal Trainer</h3>
+          <h2>Nosso Jornalzinho</h2>
+          <form id="formulario" action="#" method="get">
+            <label for="nome"></label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Seu Nome"
+            /><br />
 
-                <label for="email"></label>
-                <input type="email" name="email" id="email" placeholder="Seu E-mail"/>
-                <p>*Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum possimus ipsam eum tempora consequatur in nemo fuga animi laborum, vel nam error accusantium distinctio rerum minima magnam laudantium consequuntur dolor.
-                </p>
-                
-                <button type="submit" id='botao-inscrever' name="enviar">Increver-se</button>
-            </form>
+            <label for="email"></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu E-mail"
+            />
+            <p>
+              *Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+              possimus ipsam eum tempora consequatur in nemo fuga animi laborum,
+              vel nam error accusantium distinctio rerum minima magnam
+              laudantium consequuntur dolor.
+            </p>
+
+            <button type="submit" id="botao-inscrever" name="enviar">
+              Increver-se
+            </button>
+          </form>
         </div>
-    </div>
+      </div>
     </section>
 
     <footer class="js-anim">
-        <div class="grid-footer">
-            <div class="coluna-footer coluna-footer-1">
-                <a href="index.html" class="footer-karla">Karla Personal Trainer</a>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas debitis sapiente odit aut sunt alias accusamus! Corporis recusandae consectetur, animi sint quaerat hic modi! Incidunt error voluptatem laboriosam! Modi, fuga!</p>
-                    <ul class="redes-sociais">
-                        <li>
-                            <i class='fa'><a href="index.html" class="fab fa-instagram"></a></i>
-                        </li>
-                        <li>
-                            <i class='fa'><a href="index.html" class="fab fa-facebook"></a></i>
-                        </li>
-                        <li>
-                            <i class='fa'><a href="index.html" class="fab fa-twitter"></a></i>
-                        </li>
-                    </ul>
-
-            </div>
-            <div class="coluna-footer coluna-footer-depoimento">
-                <h3>Depoimentos</h3>
-                <p class="depoimento">"Corporis recusandae consectetur, animi sint quaerat hic modi!"</p>
-                <p class='nome-depoimento'>Smith WeberJegermanjanson <br /></p>
-                <p class="depoimento">"Incidunt error voluptatem laboriosam! Modi, fuga!"</p>
-                <p class='nome-depoimento'>João do Sabão Sagrado</p>
-
-            </div>
-            <div class="coluna-footer coluna-aulas">
-                <h3>Aulas</h3>
-                    <p class='aulas'>
-                        <a href="index.html">Musculação</a>
-                    </p>
-                    <p>
-                        <a href="index.html">Fitness</a>
-                    </p>
-                    <p>
-                        <a href="index.html">Yoga</a>
-                    </p>
-                    <p>
-                        <a href="index.html">Levantamento de Peso</a>
-                    </p>
-                    <p>
-                        <a href="index.html">Reabilitação</a>
-                    </p>
-                    <p>
-                        <a href="index.html">Zumba</a>
-                    </p>
-                
-            </div>
-            <div class="coluna-footer coluna-contato">
-                <h3>Contato</h3>
-
-                <p>
-                    <span class='nome-depoimento'>Endereço</span> <br />
-                Rua dos perdidos, lado oeste da saída pra entrada, ??, 559</p>
-
-                <p>
-                    <span class='nome-depoimento'>Telefone</span> <br />
-                  <a href="tel:99999999999">(99) 9 9999-9999</a> </p>
-                
-                <p>
-                    <span class='nome-depoimento'>Email</span> <br /> <a href="mailto:umemail@gmail.com">
-                umemail@gmail.com</a></p>
-                
-            </div>
-
-            
+      <div class="grid-footer">
+        <div class="coluna-footer coluna-footer-1">
+          <a href="index.html" class="footer-karla">Karla Personal Trainer</a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            debitis sapiente odit aut sunt alias accusamus! Corporis recusandae
+            consectetur, animi sint quaerat hic modi! Incidunt error voluptatem
+            laboriosam! Modi, fuga!
+          </p>
+          <ul class="redes-sociais">
+            <li>
+              <i class="fa"
+                ><a href="index.html" class="fab fa-instagram"></a
+              ></i>
+            </li>
+            <li>
+              <i class="fa"
+                ><a href="index.html" class="fab fa-facebook"></a
+              ></i>
+            </li>
+            <li>
+              <i class="fa"><a href="index.html" class="fab fa-twitter"></a></i>
+            </li>
+          </ul>
         </div>
-        <span class="copyright"><p>Desenvolvido por <a href="http://www.github.com/bryanbruzinga" target="_blank"> Bryan da Silva Bruzinga</a></p></span>
+        <div class="coluna-footer coluna-footer-depoimento">
+          <h3>Depoimentos</h3>
+          <p class="depoimento">
+            "Corporis recusandae consectetur, animi sint quaerat hic modi!"
+          </p>
+          <p class="nome-depoimento">Smith WeberJegermanjanson <br /></p>
+          <p class="depoimento">
+            "Incidunt error voluptatem laboriosam! Modi, fuga!"
+          </p>
+          <p class="nome-depoimento">João do Sabão Sagrado</p>
+        </div>
+        <div class="coluna-footer coluna-aulas">
+          <h3>Aulas</h3>
+          <p class="aulas">
+            <a href="index.html">Musculação</a>
+          </p>
+          <p>
+            <a href="index.html">Fitness</a>
+          </p>
+          <p>
+            <a href="index.html">Yoga</a>
+          </p>
+          <p>
+            <a href="index.html">Levantamento de Peso</a>
+          </p>
+          <p>
+            <a href="index.html">Reabilitação</a>
+          </p>
+          <p>
+            <a href="index.html">Zumba</a>
+          </p>
+        </div>
+        <div class="coluna-footer coluna-contato">
+          <h3>Contato</h3>
+
+          <p>
+            <span class="nome-depoimento">Endereço</span> <br />
+            Rua dos perdidos, lado oeste da saída pra entrada, ??, 559
+          </p>
+
+          <p>
+            <span class="nome-depoimento">Telefone</span> <br />
+            <a href="tel:99999999999">(99) 9 9999-9999</a>
+          </p>
+
+          <p>
+            <span class="nome-depoimento">Email</span> <br />
+            <a href="mailto:umemail@gmail.com"> umemail@gmail.com</a>
+          </p>
+        </div>
+      </div>
+      <span class="copyright"
+        ><p>
+          Desenvolvido por
+          <a href="http://www.github.com/bryanbruzinga" target="_blank">
+            Bryan da Silva Bruzinga</a
+          >
+        </p></span
+      >
     </footer>
-    
-</body>
+  </body>
 </html>

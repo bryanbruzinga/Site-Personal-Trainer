@@ -1,6 +1,6 @@
 .expert {
-  margin-top: 8%;
-  padding-top: 6%;
+  margin-top: 100px;
+  padding-top: 100px;
   background-image: url(images/gym-expert.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -10,8 +10,8 @@
 .block-expert {
   display: grid;
   grid-template-columns: 1fr;
-  max-width: 35%;
-  margin: 0 9%;
+  max-width: 450px;
+  margin: 0 100px;
   color: #ffffff;
 }
 .block-expert h3 {
@@ -20,35 +20,20 @@
 }
 .block-expert p {
   font-size: 0.825rem;
-  margin-top: 70px;
+  margin-top: 40px;
 }
 
 /******************************* MOBILE *********************************/
-@media (max-width: 1024px) {
-  .expert {
-    height: 80vh;
-  }
-  .block-expert {
-    max-width: 30%;
-  }
-}
-@media screen and (max-width: 950px) {
+@media (max-width:750px) {
   .block-expert {
     text-align: center;
-    width: 80%;
-    margin-top: 100px;
-    margin-left: 5%;
-  }
-  .block-expert p {
-    font-size: 1rem;
   }
 }
+
 @media (max-width: 414px) {
-  .expert {
-    height: 80vh;
-  }
   .block-expert {
-    max-width: 90%;
+    margin: 0 10px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;

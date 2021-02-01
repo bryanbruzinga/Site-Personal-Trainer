@@ -1,6 +1,7 @@
 function animationPage() {
     const sections = document.querySelectorAll('.js-anim')
     const screenSize = window.innerHeight * 0.6
+    const links = document.querySelectorAll('#navbar li')
 
     function animaScroll() {
         sections.forEach((item) => {
@@ -13,8 +14,9 @@ function animationPage() {
             }
         })
     }
-    animaScroll()
 
+    animaScroll()
     window.addEventListener('scroll', animaScroll)
 }
 animationPage()
+

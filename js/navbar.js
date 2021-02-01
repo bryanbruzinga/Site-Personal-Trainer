@@ -1,5 +1,5 @@
 //Função para o navbar fixo
-let nav = document.getElementById('header')
+let nav = document.getElementById('navbar')
 window.addEventListener('scroll', function() {
     if(window.pageYOffset > 200) {
         nav.classList.remove('nav-fixed-off')

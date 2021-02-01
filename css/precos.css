@@ -10,13 +10,13 @@
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
-  height: 90vh;
+  height: 100vh;
 }
 
 .column-precos {
   background-color: #ffffff;
-  max-width: 90%;
-  height: 85%;
+  max-width: 700px;
+  height: 500px;
 }
 .desc-preco {
   display: flex;
@@ -58,47 +58,22 @@
 }
 
 /******************************** MOBILE **********************************/
-@media (max-width: 1025px) and (max-height: 569px) {
+@media (max-width: 1120px) {
   .precos {
-    height: 100vh;
+    height: 1600px;
   }
-  .grid-precos {
-    height: 100vh;
-  }
-  .column-precos {
-    height: 75vh;
-  }
-  .column-precos img {
-    width: 100%;
-  }
-}
-@media (max-width: 1025px) and (max-height: 1366px) {
-  .precos {
-    height: 55vh;
-  }
-  .grid-precos {
-    height: 55vh;
-  }
-  .column-precos {
-    height: 35vh;
-  }
-}
-
-@media (max-width: 414px) {
   .grid-precos {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  .precos {
-    height: 100%;
-  }
-  .grid-precos {
-    height: 70%;
   }
   .column-precos {
-    height: 65vh;
-    margin: 20px 0;
+    margin-top: 50px;
+  }
+}
+
+@media (max-width:360px) {
+  .column-precos,
+  .column-precos img {
+    max-width: 300px;
   }
 }

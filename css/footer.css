@@ -1,34 +1,30 @@
 .grid-footer {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 10px;
-  margin-top: 5%;
+  gap: 40px;
+  align-items: start;
+  justify-content: center;
   background-image: url(images/footer.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
+  padding: 0 40px;
 }
 
 .grid-footer div {
   color: #ffffff;
 }
 .coluna-footer {
-  margin-top: 50%;
-  margin-bottom: 30%;
-  max-width: 90%;
+  margin-top: 100px;
   text-align: center;
 }
-.coluna-footer-1 {
-  margin-left: 40px;
-}
+
 .coluna-footer-1 p,
 .depoimento {
   margin-top: 40px;
   font-size: 0.9rem;
-}
-.coluna-footer-depoimento {
-  margin-left: 20px;
 }
 .redes-sociais {
   margin-top: 20px;
@@ -91,12 +87,21 @@
 }
 
 /***************************** MOBILE ********************************/
-@media (max-width: 414px) {
+@media (max-width: 1161px) {
+  .grid-footer {
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+  }
+  .coluna-aulas,
+  .coluna-contato {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 600px) {
   .grid-footer {
     grid-template-columns: 1fr;
     align-items: center;
     justify-items: center;
-    height: 100%;
     margin: 40px 0 0 0;
   }
   .coluna-footer {

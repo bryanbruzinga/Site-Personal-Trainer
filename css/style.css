@@ -42,3 +42,12 @@ p {
   transform: translate3d(0, 0, 0);
   transition: 0.3s;
 }
+
+a.ativo {
+  color: #38b143;
+  transition: 0.6s;
+}
+a.ativo:hover {
+  color: #ffffff;
+  transition: 0.6s;
+}
