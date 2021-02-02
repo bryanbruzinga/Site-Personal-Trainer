@@ -1,7 +1,7 @@
 # Site Personal Trainer
- Um site para uma personal trainer.
- Meu primeiro site feito totalmente do zero sem o uso de frameworks, tudo na unha, aplicando todos os meus conhecimentos adquiridos e incluindo novos a medida que a necessidade surge.
- Site somente com a parte Front End por hora, algumas funcionalidades aplicadas, porém, mantendo a simplicidade.
+ Um site inpirado em um modelo para personal trainers.
+ Meu primeiro site feito totalmente do zero sem o uso de frameworks, tudo na unha, aplicando todos os meus conhecimentos adquiridos e incluindo novos a medida que os aprendo.
+ Site somente com o Front End.
  O endereço para vê-lo online está [aqui.](https://bryanbruzinga.github.io/Site-Personal-Trainer/.)
  
- Css reestruturado aplicando conceitos de Flex Boxes.
+ Foi utilizado HTML5, CSS3 e JS, aplicando um pouco de otimização de performance e redução de arquivos para o HTML carregar, design responsivo.
