@@ -96,14 +96,70 @@ nav ul {
 .nav-fixed-off {
   background-color: transparent;
 }
+.mobile-menu-button {
+  display: none;
+}
 
-/******************************** MOBILE ************************************/
+/******************************** MOBILE Menu ************************************/
 
 @media screen and (max-width: 992px) {
-  #navbar ul li a {
+  .title-karla {
     display: none;
   }
+  .mobile-menu-button {
+    display: flex;
+    border: none;
+    background: none;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    align-items: center;
+    color: #fff;
+    margin: 10px;
+    position: relative;
+    border: 1px solid rgba(255,255,255,.5);
+    background: #000;
+    z-index: 300;
+  }
+  .mobile-menu-button::before {
+    margin-right: 4px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    width: 12px;
+    background: #fff;
+    box-shadow: 0 4px #fff, 0 -4px #fff;
+    transition: transform .3s;
+  }
+  .mobile-menu-button.active::before {
+    transform: rotate(90deg);
+  }
+  .mobile-menu-button.active {
+    color: #38b143;
+  }
+  .list {
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    width: 90%;
+    z-index: 200;
+    top: 0;
+    padding: 60px 0 20px 0;
+    border: 2px solid #38b143;
+    border-radius: 5px;
+    background:rgba(0, 0, 0, 0.9);
+  }
+  .list.active {
+    display: block;
+  }
+  .list li {
+    padding-top: 40px;
+  }
+  .list li:last-child {
+    padding-bottom: 20px;
+  }
 }
+
 
 /* Main */
 
@@ -163,25 +219,22 @@ nav ul {
     margin-top: 100px;
   }
   .section-home p {
-    font-size: 0.825rem;
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 823px) {
   .section-home {
-    padding-top: 100px;
+    padding-top: 50px;
+  }
+  .section-home h1 {
+    font-size: 2rem;
   }
 }
 
 @media (max-width: 414px) {
   .container-home {
     max-width: 90%;
-  }
-  .section-home h1 {
-    font-size: 1.5rem;
-  }
-  .section-home p {
-    font-size: 0.825rem;
   }
 }
 
