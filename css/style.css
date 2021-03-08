@@ -18,22 +18,15 @@ p {
 #seta-topo {
   color: white;
   background-image: linear-gradient(45deg, #8cc745, #3db344);
-<<<<<<< HEAD
   box-shadow: 5px 5px 10px rgba(0, 0, 0, .5);
   border-radius: 50%;
-=======
-  box-shadow: 2px 2px 1px #000;
->>>>>>> refs/remotes/origin/master
   padding: 15px;
   position: fixed;
   right: 5%;
   bottom: 15%;
   z-index: 2;
   opacity: 0.5;
-<<<<<<< HEAD
   transition: 0.5s;
-=======
->>>>>>> refs/remotes/origin/master
 }
 #seta-topo:hover {
   transition: 0.5s;
@@ -177,10 +170,7 @@ nav ul {
   background-size: cover;
   height: 100vh;
   width: 100%;
-<<<<<<< HEAD
   transition: ease-in-out .5s;
-=======
->>>>>>> refs/remotes/origin/master
 }
 
 .section-home {
@@ -497,13 +487,10 @@ a.saiba-mais:hover {
 .column-precos ul {
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
 .column-precos a {
   margin-bottom: 1rem;
 }
 
-=======
->>>>>>> refs/remotes/origin/master
 .column-precos a:hover {
   border: 1px solid #38b143;
   background-color: #38b143;

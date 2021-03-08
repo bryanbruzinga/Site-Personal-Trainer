@@ -9,13 +9,7 @@ export default function mudarImg() {
 
   function imgChanger() {
     bannerAtual = (bannerAtual + 1) % 3;
-<<<<<<< HEAD
     document.querySelector(".header").style.backgroundImage = `url(${banner[bannerAtual]})`;
-=======
-    document.querySelector(
-      ".header"
-    ).style.backgroundImage = `url(${banner[bannerAtual]})`;
->>>>>>> refs/remotes/origin/master
     document.querySelector(".container-home h1").innerHTML = h1text[bannerAtual];
   }
 
